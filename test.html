@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analysis Project</title>
+    <link rel="icon" href="microsoft_powerbi_logo_icon_170953.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #e5e5e5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4CAF50;
+            font-family: 'Arial', sans-serif;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+        .unable-to-view-button {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <h1>Sales Analysis Project</h1>
+        <div class="report-section">
+            <h2>Project Overview</h2>
+            <p>
+                In this comprehensive sales analysis project, we aimed to leverage the power of Power BI and implement a star schema for efficient data representation. The project involved the integration of six vital datasets: dates, sales, stores, salespeople, products, and a sales query. The primary goal was to delve into sales trends, product performance, and customer segments to provide actionable insights for decision-making.
+            </p>
+        </div>
+
+        <div class="report-section">
+            <h2>Project Objectives</h2>
+            <ul>
+                <li>Implement a star schema in Power BI for structured and efficient sales analysis.</li>
+                <li>Define and organize dimensions and a central fact table to unlock valuable insights.</li>
+                <li>Load data through Extract, Transform, Load (ETL) processes for data integrity and consistency.</li>
+                <li>Create queries for analyzing sales trends, product performance, and customer segments.</li>
+                <li>Empower decision-makers with actionable insights to optimize processes and drive business success.</li>
+            </ul>
+        </div>
+
+        <div class="report-section">
+            <h2>Modelling & Results</h2>
+            <p>
+                The heart of the project lies in the star schema, providing a structured approach to organizing dimensions (dates, sales, stores, salespeople, products) around a central fact table (sales query). This design allows for efficient analysis, enabling businesses to navigate through complex datasets seamlessly.
+            </p>
+            <p>
+                The results obtained from this approach empower decision-makers to make informed choices, optimize processes, and drive overall business success. As we continue to navigate the data-driven landscape, adopting such methodologies becomes imperative for staying competitive and agile in today's dynamic business environment.
+            </p>
+        </div>
+
+        <div class="star-schema-img">
+            <img src="Picture1.png" alt="Star Schema" width="800">
+            <p>Illustration of the implemented Star Schema</p>
+        </div>
+
+        <div class="unable-to-view-button">
+            <!-- Replace the 'src' attribute with the embed link of your PowerPoint presentation -->
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRSDMDzdpyLZaEDMshUDbwVKxZ20Gim8dlQu-kSsopsutwF0TL_Lno85F4Grz6ga85CL3slWr2VOxua/embed?start=false&loop=false&delayms=15000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+
+    </main>
+
+    <script>
+               function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+
+        function scrollToReport() {
+            document.querySelector('.download-button a').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+</html>
