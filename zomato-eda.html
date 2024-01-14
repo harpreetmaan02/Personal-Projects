@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato EDA Project</title>
+    <link rel="icon" href="-local-dining_90278.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #e5e5e5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4CAF50;
+            font-family: 'Arial', sans-serif;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+        .unable-to-view-button {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <h1>Zomato EDA Project</h1>
+        <div class="report-section">
+            <h2>Project Overview</h2>
+            <p>
+                In this exploratory data analysis (EDA) project focused on Zomato data, we aimed to uncover valuable insights and trends within a vast dataset of restaurants. The analysis involved studying various parameters such as restaurant locations, cuisines, user ratings, and more to provide a comprehensive view of the Zomato ecosystem.
+            </p>
+        </div>
+
+        <!-- Zomato Restaurant Analysis Content -->
+        <div class="report-section">
+            <h2>Zomato Restaurant Analysis</h2>
+            <p>
+                Zomato Restaurant Analysis involves exploring various aspects of the Zomato dataset to gain insights into restaurant trends and user preferences.
+            </p>
+            <p>
+                <strong>Dataset Details</strong>
+            </p>
+            <p>
+                <strong>Problem 01:</strong> Visualizing the reach of Zomato pan India.
+            </p>
+            <p>
+                <strong>Problem 02:</strong> Identify the most popular cuisines across Indian states.
+            </p>
+            <!-- Add the remaining content as needed -->
+
+            <!-- Insights section -->
+            <p>
+                <strong>Insights:</strong> Delhi & Goa have a high number of restaurants registered with Zomato.
+            </p>
+            <p>
+                <strong>Insights:</strong> New Delhi and Haridwar are the cities where the number of restaurants is high.
+            </p>
+
+            <!-- Cuisine insights -->
+            <p>
+                <strong>Insights:</strong> Restaurants seem to be doing well in the following cuisines:
+                <ul>
+                    <li>NORTH INDIAN</li>
+                    <li>CHINESE</li>
+                    <li>FAST FOOD</li>
+                    <li>BAKERY</li>
+                    <li>SOUTH INDIAN</li>
+                </ul>
+            </p>
+
+            <!-- Chain insights -->
+            <p>
+                <strong>Insights:</strong> Domino's Pizza & Cafe Coffee Day has the most popular chain across India.
+            </p>
+
+            <!-- Location and restaurant type insights -->
+            <p>
+                <strong>Problem 04:</strong> In your city, which locality would you choose for opening your restaurant and why?
+            </p>
+            <p>
+                <strong>Problem 05:</strong> In the chosen locality, what type of restaurant would you want to open?
+            </p>
+            <p>
+                <strong>Problem 06:</strong> Where would you place your restaurant in this locality (identify the latitude & longitude) & why?
+            </p>
+
+            <!-- Location details -->
+            <p>
+                <strong>WHERE WOULD YOU PLACE YOUR RESTAURANT IN THIS LOCALITY (IDENTIFY THE LATITUDE & LONGITUDE) & WHY?</strong>
+                <br>
+                Ghole Road, Fergusson College Road
+                <br>
+                Latitude: 18.524793, Longitude: 73.841486
+            </p>
+
+            <!-- Additional insights -->
+            <p>
+                <strong>Additional Insights:</strong>
+                <br>
+                Average Distance between the restaurants: 1.1 Km
+            </p>
+        </div>
+
+        <div class="unable-to-view-button">
+            <!-- Replace the 'src' attribute with the embed link of your PowerPoint presentation -->
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRSDMDzdpyLZaEDMshUDbwVKxZ20Gim8dlQu-kSsopsutwF0TL_Lno85F4Grz6ga85CL3slWr2VOxua/embed?start=false&loop=false&delayms=15000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+
+    </main>
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+
+        function scrollToReport() {
+            document.querySelector('.download-button a').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+</html>
